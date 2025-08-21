@@ -1,0 +1,13 @@
+---
+metadata:
+  name: Lambda Log JSON Format 
+  id: CUSTOM_CFN_010
+  category: LOGGING
+  severity: HIGH
+definition:
+  cond_type: attribute
+  resource_types:
+    - AWS::Lambda::Function
+  attribute: LoggingConfig.LogFormat
+  operator: equals
+  value: JSON
